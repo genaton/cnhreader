@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Layout principal ocupa tudo */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* HEADER */
+.header {
+  height: 80px;
+  background: #ffea00; /* amarelo BB */
+  color: #0033a0; /* azul BB */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  font-weight: 700;
+}
+
+/* Agrupamento da esquerda */
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espaço entre ícone e menu */
+}
+
+/* Menu principal */
+.menu {
+  display: flex;
+  gap: 40px; /* espaço entre opções */
+  font-size: 16px;
+}
+
+.menu span {
+  cursor: pointer;
+  color: #0033a0; /* força azul */
+  transition: opacity 0.2s ease;
+}
+
+.menu span:hover {
+  opacity: 0.7;
+}
+
+/* Botão da direita */
+.login {
+  color: #0033a0; /* azul BB */
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* MAIN ocupa o restante automaticamente */
+.main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SLIDER */
+.slider {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* Texto */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.content h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 22px;
+}
+
+/* FOOTER */
+/* BOTTOM CTA */
+.bottom-cta {
+  height: 90px;
+  background: linear-gradient(90deg, #3d5afe, #3f51b5);
+  color: #ffea00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  font-weight: 800;
+  font-size: 32px;
+}
+
+/* Botão */
+.bottom-cta button {
+  background: #ffea00;
+  color: #3d5afe;
+  border: none;
+  padding: 18px 40px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.bottom-cta button:hover {
+  transform: scale(1.05);
+}
+
+/* SETAS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 12px 16px;
+  cursor: pointer;
+  z-index: 5;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* DOTS */
+.dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dot.active {
+  background: white;
+}
+
