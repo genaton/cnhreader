@@ -13,8 +13,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffea00;
-  color: #0033a0;
+  background-color: #fcfc30;
+  color: #3853ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +49,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 120px 80px 0 80px;
-  background-color: #ffea00;
+  background-color: #fcfc30;
 }
 
 .hero-left {
@@ -59,14 +59,14 @@ body {
 .hero-left h1 {
   font-size: 72px;
   font-weight: 800;
-  color: #0033a0;
+  color: #3853ff;
   margin-bottom: 20px;
 }
 
 .hero-left p {
   font-size: 22px;
   max-width: 500px;
-  color: #0033a0;
+  color: #3853ff;
 }
 
 .hero-right {
@@ -85,8 +85,8 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #0033a0;
-  color: #ffea00;
+  background-color:#3853ff;
+  color: #fcfc30;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +97,8 @@ body {
 }
 
 .bottom-cta button {
-  background-color: #ffea00;
-  color: #0033a0;
+  background-color: #fcfc30;
+  color: #3853ff;
   border: none;
   padding: 14px 40px;
   font-weight: 700;
@@ -126,7 +126,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 51, 160, 0.7);
+  background-color: #3853ff;
   color: white;
   border: none;
   font-size: 28px;
@@ -159,5 +159,5 @@ body {
 }
 
 .dot.active {
-  background-color: #0033a0;
+  background-color: #3853ff;
 }
