@@ -82,7 +82,7 @@ export default function UploadCnhModal({ open, onClose }) {
 
         <input type="file" onChange={(e) => setArquivo(e.target.files[0])} />
 
-        <button onClick={enviarArquivo} disabled={loading}>
+        <button className="enviar" onClick={enviarArquivo} disabled={loading}>
           {loading ? "Processando..." : "Enviar"}
         </button>
 

@@ -18,13 +18,21 @@
   padding: 30px;
   border-radius: 10px;
   width: 800px;
-    position: relative;
+      position: relative;
   text-align: center;
   color: #4466EE;
 }
-.input{
-    color: #4466EE;
+input[type="file"]::file-selector-button {
+  background-color: var(--bb-primary); /* azul BB */
+  color: white;          /* amarelo BB */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
 }
+
 .modal-close {
   position: absolute;
   top: 10px;
@@ -34,12 +42,17 @@
   font-size: 20px;
   cursor: pointer;
 }
+.enviar{
+    margin-top: 30px;
+}
+
 
 .drop-area {
-  border: 2px dashed #888;
+  border: 2px dashed #4466EE;
   padding: 30px;
+  height: 300px;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   transition: 0.2s;
 }
 
