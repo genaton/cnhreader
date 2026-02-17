@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "BancoDoBrasil";
+    src: url("../assets/fonts/BancoDoBrasilTitulos-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+:root{
+    
+    --bb-primary:  #4466EE;
+    --bb-secondary: #fcfc30;
+    --background-color: #4466EE;
+
+    --font-primary:"BancoDoBrasil", system-ui, sans-serif;
+    --title-font: "BancoDoBrasil";
+}

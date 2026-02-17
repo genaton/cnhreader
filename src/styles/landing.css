@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-primary);
 }
 
 /* HEADER */
@@ -13,29 +15,52 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fcfc30;
-  color: #3853ff;
+  background-color: var(--bb-secondary);
+  color: var(--bb-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
   font-weight: 700;
   z-index: 1000;
+  border-bottom: 4px solid var(--bb-primary);
+}
+.header img{
+  width: 60px;
+  height: auto;
 }
 
 .menu {
   display: flex;
-  gap: 40px;
+  align-items: center; 
+  gap: 30px; /* espaço entre os itens */ 
+  padding-left: 15px; /* espaço entre a borda e o texto */ 
+  border-left: 2px solid  rgb(222, 222, 222,0.85); /* o traço vertical */
 }
 
 .menu span {
   cursor: pointer;
 }
+.left-group{
+ display: flex; 
+ align-items: center; 
+ gap: 12px;
+ 
+}
 
 .menu-icon {
-  font-size: 22px;
-  margin-right: 30px;
+  font-size: 50px;
+  /* margin-right: 30px; */
   cursor: pointer;
+}
+.icon{
+  font-size: 40px;
+  margin-right:16px;
+  cursor: pointer;
+}
+.logo{
+  height: 40px;
+  width: auto;
 }
 
 .login {
@@ -49,7 +74,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 120px 80px 0 80px;
-  background-color: #fcfc30;
+  background-color: var(--bb-secondary);
 }
 
 .hero-left {
@@ -59,14 +84,14 @@ body {
 .hero-left h1 {
   font-size: 72px;
   font-weight: 800;
-  color: #3853ff;
+  color: var(--bb-primary);
   margin-bottom: 20px;
 }
 
 .hero-left p {
   font-size: 22px;
   max-width: 500px;
-  color: #3853ff;
+  color: var(--bb-primary);
 }
 
 .hero-right {
@@ -85,8 +110,8 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color:#3853ff;
-  color: #fcfc30;
+  background-color:var(--bb-primary);
+  color: var(--bb-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,8 +122,8 @@ body {
 }
 
 .bottom-cta button {
-  background-color: #fcfc30;
-  color: #3853ff;
+  background-color: var(--bb-secondary);
+  color: var(--bb-primary);
   border: none;
   padding: 14px 40px;
   font-weight: 700;
@@ -126,7 +151,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #3853ff;
+  background-color: var(--bb-primary);
   color: white;
   border: none;
   font-size: 28px;
@@ -159,5 +184,5 @@ body {
 }
 
 .dot.active {
-  background-color: #3853ff;
+  background-color: var(--bb-primary);
 }

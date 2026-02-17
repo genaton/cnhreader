@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function Cards() {
-  const slides = ["/slide1.jpg", "/slide2.jpg", "/slide3.jpg"];
+  const slides = ["/slide1.jpg", "../assets/img/slide2.png", "/slide3.jpg"];
   const [current, setCurrent] = useState(0);
 
   // troca automática a cada 4 segundos
