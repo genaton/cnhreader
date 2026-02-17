@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -12,20 +14,23 @@
 }
 
 .modal-content {
-  background: white;
+  background: var(--bb-secondary);
   padding: 30px;
   border-radius: 10px;
-  width: 420px;
-  position: relative;
+  width: 800px;
+    position: relative;
   text-align: center;
+  color: #4466EE;
 }
-
+.input{
+    color: #4466EE;
+}
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
   border: none;
-  background: transparent;
+  background: #4466EE;
   font-size: 20px;
   cursor: pointer;
 }
@@ -39,8 +44,8 @@
 }
 
 .drop-area.drag-over {
-  border-color: #0053a0;
-  background: #e6f0ff;
+  border-color: var(--bb-secondary);
+  background: var(--bb-secondary);
 }
 
 .msg-validacao {
