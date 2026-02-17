@@ -39,6 +39,7 @@ input[type="file"]::file-selector-button {
   right: 10px;
   border: none;
   background: #4466EE;
+  color: white;
   font-size: 20px;
   cursor: pointer;
 }
