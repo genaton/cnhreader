@@ -62,11 +62,11 @@ input[type="file"]::file-selector-button {
 }
 
 .msg-validacao {
-  color: green;
+  color: rgb(92, 222, 92);
   margin-top: 15px;
 }
 
 .msg-conta {
-  color: blue;
+  color: var(--bb-primary);
   margin-top: 10px;
 }
