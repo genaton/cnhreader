@@ -14,7 +14,7 @@
 }
 
 .modal-content {
-  background: var(--bb-secondary);
+  background: #ffffff;
   padding: 30px;
   border-radius: 10px;
   width: 800px;
@@ -63,7 +63,7 @@ input[type="file"]::file-selector-button {
 }
 
 .msg-validacao {
-  color: rgb(92, 222, 92);
+  color: #00EBD0;
   margin-top: 15px;
 }
 
