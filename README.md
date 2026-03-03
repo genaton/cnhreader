@@ -1,6 +1,6 @@
-# CNHReader
+# CNHReader.
 
-O projeto **CNHReader** é uma aplicação desenvolvida com **React** e **Vite** que permite a leitura de dados da Carteira Nacional de Habilitação (CNH) do Brasil.
+O projeto **CNHReader** é uma aplicação desenvolvida com **React** e **Vite** que permite a leitura de dados de Documento de Identificação.
 
 ## Instalação
 
@@ -48,7 +48,7 @@ A estrutura do projeto é organizada da seguinte forma:
 
 ## Funcionalidades
 
-- Leitura de dados da CNH através da câmera.
+- Envio de arquivo ou imagem.
 - Interface de usuário amigável e responsiva.
 - Suporte a múltiplas resoluções de tela.
 
@@ -58,4 +58,9 @@ Para personalizar a configuração do Vite, edite o arquivo `vite.config.js`. É
 
 ---
 
-Sinta-se à vontade para contribuir com o projeto!
+👨‍👩‍👧‍👦 Equipe
+Genaton Alex Goncalves — genaton@bb.com.br
+Carla Aparecida Dutra Naves de Souza Teixeira — cadnst@gmail.com
+Elton Fabiano Uramoto — eltonuramoto@bb.com.br
+Renan Paschoalotti — renan.paschoalotti@bb.com.br
+Moises Salgado de Morais — moisessalgado@bb.com.br
