@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 
 export default function Cards() {
-  const slides = ["/slide1.jpg", "../assets/img/slide2.png", "/slide3.jpg"];
+  const slides = [
+    "/slide1.png",
+    "/slide2.png",
+    "/slide3.png"
+  ];
+
   const [current, setCurrent] = useState(0);
 
-  // troca automática a cada 4 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -45,7 +49,7 @@ export default function Cards() {
             key={index}
             className={index === current ? "dot active" : "dot"}
             onClick={() => setCurrent(index)}
-          ></span>
+          />
         ))}
       </div>
     </div>

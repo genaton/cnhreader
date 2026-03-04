@@ -43,10 +43,6 @@ input[type="file"]::file-selector-button {
   font-size: 20px;
   cursor: pointer;
 }
-.enviar{
-    margin-top: 30px;
-}
-
 
 .drop-area {
   border: 2px dashed #4466EE;
@@ -70,4 +66,49 @@ input[type="file"]::file-selector-button {
 .msg-conta {
   color: var(--bb-primary);
   margin-top: 10px;
+}
+
+/* ================= UPLOAD CONTAINER ================= */
+
+.upload-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.upload-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.file-wrapper {
+  margin-bottom: 30px;
+}
+
+/* ================= BOTÃO PADRÃO MODAL ================= */
+
+.modal-button {
+  background-color: var(--bb-primary);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.modal-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.modal-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.enviar {
+  margin-top: 30px;
 }

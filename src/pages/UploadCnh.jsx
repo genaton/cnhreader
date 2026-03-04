@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import "../styles/uploadmodal.css";
 
 export default function UploadCnh() {
   const [arquivo, setArquivo] = useState(null);
@@ -18,9 +19,13 @@ export default function UploadCnh() {
     formData.append("arquivo", arquivo);
 
     try {
-      const response = await axios.post("http://localhost:8080/ocr/cnh", formData, {
-        headers: { "Content-Type": "multipart/form-data" }
-      });
+      const response = await axios.post(
+        "http://localhost:8080/ocr/cnh",
+        formData,
+        {
+          headers: { "Content-Type": "multipart/form-data" }
+        }
+      );
 
       setMensagemValidacao(response.data.mensagemValidacao);
       setMensagemConta(response.data.mensagemConta);
@@ -34,26 +39,32 @@ export default function UploadCnh() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
-      <h2>Envio da CNH</h2>
+    <div className="upload-container">
+      <h2 className="upload-title">Envio da CNH</h2>
 
-      <input
-        type="file"
-        onChange={(e) => setArquivo(e.target.files[0])}
-      />
+      <div className="file-wrapper">
+        <input
+          type="file"
+          onChange={(e) => setArquivo(e.target.files[0])}
+        />
+      </div>
 
-      <button onClick={enviarArquivo} disabled={loading}>
+      <button
+        className="modal-button"
+        onClick={enviarArquivo}
+        disabled={loading}
+      >
         {loading ? "Processando..." : "Enviar"}
       </button>
 
       {mensagemValidacao && (
-        <p style={{ color: "green", marginTop: 20 }}>
+        <p className="msg-validacao">
           {mensagemValidacao}
         </p>
       )}
 
       {mensagemConta && (
-        <p style={{ color: "blue", marginTop: 10 }}>
+        <p className="msg-conta">
           {mensagemConta}
         </p>
       )}
